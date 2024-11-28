@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                    // Set the JavaScript version to be compiled to (latest ECMAScript features)
+    "module": "NodeNext",                  // Use the Node.js module resolution and format (for ES modules)
+    "strict": true,                        // Enable all strict type-checking options for better type safety
+    "esModuleInterop": true,               // Allows default imports from CommonJS modules
+    "moduleResolution": "nodenext",        // Resolve modules using Node.js's algorithm for ES modules
+    "skipLibCheck": true,                  // Skip type checking of declaration files (.d.ts) to speed up compilation
+    "forceConsistentCasingInFileNames": true, // Enforce consistent file name casing in imports
+    "outDir": "./dist",                    // Directory where the compiled JavaScript files will be output
+    "rootDir": "./src",                    // Directory containing your TypeScript source files
+    "resolveJsonModule": true,             // Allow importing JSON files as modules
+  },
+  "include": ["src/**/*.ts"],              // Include all TypeScript files within the 'src' directory for compilation
+  "exclude": ["node_modules"]              // Exclude 'node_modules' directory from compilation
+}
